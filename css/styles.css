@@ -1,0 +1,663 @@
+body{
+	font:  17px/1.8 'Poppins Regular', Arial, sans-serif;
+}
+
+h1{
+	font: 110px/1.3 'Poppins Regular', Arial, sans-serif;
+	color:  #000205;
+	text-transform: uppercase;
+}
+
+h2{
+	font: 40px/1 'Poppins Bold', Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.clear{
+	clear:  both;
+}
+
+.template-width{
+	width:  1920px;
+	margin:  0 auto;
+}
+
+.header-central-content{
+	width:  1821px;
+	margin:  0 auto;
+}
+
+.content-width{
+	width:  1172px;
+	margin:  0 auto;
+}
+
+/**********************Шапка сайта**********************/
+header{
+	background: #b5caee;
+}
+
+header section:first-child{
+	padding-top:  45px;
+	overflow:  hidden;
+}
+
+.logo{
+	float:  left;
+	width:  138px;
+	height:  24px;
+}
+
+nav{
+	float:  left;
+}
+
+.header-links{
+	float:  left;
+	margin-left:  957px;
+	transition: margin-left, 0.5s cubic-bezier(0.380, 0.560, 0.145, 1.145);
+}
+
+.header-links li{
+	float:  left;
+	margin-left: 80px;
+}
+
+.header-links li:first-child{
+	margin-left: 74px;
+}
+
+.header-links a{
+	color:  #fff;
+	text-transform: uppercase;
+	transition: scale, 0.14s ease-out;
+	display: block;
+}
+
+.header-links a:hover{
+	transform:  scale(1.08); 
+}
+
+/********Поисковое поле********/
+.search-block{
+	float:  left;
+	margin-left:  52px;
+	width:  23px;
+	height: 30px;
+	position:  relative;
+}
+
+.search-block button{
+	float:  left;
+	position:  absolute;
+	top:  5px;
+}
+
+.search-block button img{
+	transition: scale, .14s ease-out;
+}
+
+.search-block button img:hover{
+	cursor: pointer;
+	transform:  scale(1.08);
+}
+
+.search-form{
+	position:  absolute;
+	left:  33px;
+	top:  0px;
+}
+
+.search-form input[type="search"]{
+	outline:  0;
+	border:  none;
+	border-bottom: 1px solid #000205;
+	width:  120px;
+	padding: 0 12px 0 6px;
+	font: 15px 'Poppins Regular', Arial, sans-serif;
+	color:  #000205;
+	background: none;
+}
+
+.search-form ::placeholder, .search-form ::placeholder{
+	color:  #616161;
+	font-style:  italic;
+}
+
+/**********************Блок General info**********************/
+header section:last-child{
+	padding: 112px 0 202px;
+	overflow:  hidden;
+	position:  relative;
+}
+
+.arrow-left, .arrow-right{
+	position:  absolute;
+	top: 316px;
+	border-radius:  50%;
+	background:  #fff;
+	height: 92px;
+	overflow:  hidden;
+	transition: scale, 0.13s linear;
+}
+
+.arrow-left{
+	left:  5px;
+	background: #f2d8b9;
+}
+.arrow-right{right:  5px;}
+
+.arrow-left:hover, .arrow-right:hover{
+	transform:  scale(1.08);
+}
+
+.arrow-left img:hover, .arrow-right img:hover{
+	cursor:  pointer;
+}
+
+.watches-images{
+	float:  left;
+	width:  365px;
+	height:  565px;
+	margin-left: 244px;
+	position:  relative;
+}
+
+.watches-images img{
+	position:  absolute;
+	top:  0px;
+	right:  0px;
+	opacity: 0;
+	transition: opacity .5s linear;
+}
+
+.watches-images img:nth-child(1){
+	opacity:  1;
+}
+
+.watches-images img:nth-child(3){
+	top:  13px;
+}
+
+.watches-images img:nth-child(5){
+	top:  20px;
+}
+
+.general-info{
+	overflow:  hidden;
+	float:  left;
+	margin: 133px 0 0 98px;
+}
+
+h1 + p{
+	color:  #fff;
+	margin:  28px 0 47px 16px;
+	width: 850px;
+}
+
+.read, .contact, .read-more-small{
+	display:  block;	
+	background:  #252525;
+	color: #fff;
+	transition: background, 0.18s linear;
+}
+
+.read, .contact{
+	margin-right:  26px;
+	float:  left;
+	width:  94px; 
+	padding: 23px 79px 20px 82px;
+}
+
+.read{
+	margin-left:  21px;
+}
+
+.read:hover, .contact:hover, .read-more-small:hover{
+	background: #f2d8b9;
+}
+
+/**********************Блок About Our Watch**********************/
+main{
+	overflow:  hidden;
+	position:  relative;
+	z-index:  1;
+}
+
+main section:nth-child(1){
+	padding:  275px 0 232px;
+	position:  relative;
+}
+
+.main-bg{
+	position:  absolute;
+	top:  0px;
+	left:  0px;
+	z-index: -1;
+	opacity:  .06;
+}
+
+.about-watch-header{
+	color:  #0c0b0b;
+}
+
+.about-watch-header + p{
+	color:  #0a0a0a;
+	margin-top: 30px;
+	width: 672px;
+}
+
+.read-more-small{
+	width:  75px;
+	padding:  8px 42px;
+	font-size:  14px;
+	margin-top:  59px;
+}
+
+.about-watch-header ~ img{
+	position:  absolute;
+}
+
+.watch-in-box{
+	position:  absolute;
+	top:  125px;
+	right:  -190px;
+}
+
+.blue-shape{
+	top:  525px;
+	right:  -218px;
+}
+
+.red-shape{
+	top:  117px;
+	right:  132px;
+}
+
+/**********************Блок Watch Brands**********************/
+main section:nth-child(2){
+	background: rgba(193, 219, 348, .6);
+	padding:  55px 0 68px;
+}
+
+main section:nth-child(2) > div{
+	overflow:  hidden;
+	position: relative;
+}
+
+.brands-header{
+	color:  #fcfcfc;
+	text-align:  center;
+}
+
+.bold-text{
+	margin-top:  10px;
+	text-align:  center;
+	font-family: 'Poppins Bold', Arial, sans-serif;
+	color:  #2b2b2b;
+}
+
+.gallery{
+	position:  relative;
+	overflow:  hidden;
+	width:  3245px;	
+	margin-top:  49px;
+	transform:  translateX(-698px);
+}
+
+.gallery:hover{
+	cursor:  grab;
+}
+
+.gallery li{
+	width: 336px;
+	margin-right:  24px;
+	float:  left;
+	position:  relative;
+}
+
+.shadow-block{
+	position:  absolute;
+	top:  0px;
+	right:  0px;
+	z-index:  1;
+	width:  336px;
+	height:  393px;
+	transition: background .4s cubic-bezier(0.465, 0.610, 0.520, 0.930);
+}
+
+.shadow-block:hover{
+	background: rgba(46, 46, 46, .9);
+}
+
+.shadow-block a{
+	position:  absolute;
+	top:  162px;
+	left:  83px;
+	color:  #f9fafa;
+	width:  89px;
+	padding: 10px 40px;
+	border: 1px solid #f9fafa;
+	z-index:  2;
+	transition: background, .2s linear;
+}
+
+.shadow-block a:hover{
+	background: rgba(151, 153, 153, .32);
+	cursor:  pointer;
+}
+
+.price{
+	margin-top: 10px;
+	text-align:  center;
+	line-height:  1;
+	font: 30px 'Poppins Bold', Arial, sans-serif;
+}
+
+.dollar-sign{
+	color: #242425;
+}
+
+.number{
+	color: #179dfb;
+}
+
+.watch-name{
+	font:  20px/1.3 'Poppins Bold', Arial, sans-serif;
+	color:  #fcf9fc;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/**********************Блок Choose Us**********************/
+main section:nth-child(3){
+	padding-top: 86px;
+}
+
+.choose-header{
+	color:  #2b2b2b;
+}
+
+.choose-header + .bold-text{
+	text-align:  left;
+}
+
+.reasons{
+	margin-top:  112px;
+	overflow:  hidden;
+}
+
+.reasons li{
+	float:  left;
+	width: 482px;
+	margin: 0 98px 77px 0;
+	overflow: hidden;
+}
+
+.picture{
+	width: 129px;
+	height: 124px;
+	float:  left;
+	position:  relative;
+	border: 3px solid #e3e2e2;
+	border-radius: 8px;
+	display:  flex;
+}
+
+.picture img{
+	margin: auto auto;
+}
+
+.description{
+	width:  311px;
+	margin: 11px 0 0 30px;
+	float:  left;
+}
+
+.header-blue{
+	font:  25px/0.8 'Poppins Bold', Arial, sans-serif;
+	color: #4b9df9;
+}
+
+.header-blue + p{
+	font-size:  16px;
+	color:  #141414;
+	margin-top:  8px;
+}
+
+/**********************Блок Testimonial**********************/
+main section:nth-child(4){
+	position:  relative;
+}
+
+main section:nth-child(4) .bold-text{
+	text-align:  left;
+	margin-top:  10px;
+}
+
+main section:nth-child(4) .content-width{
+	padding: 127px 0 157px;
+	overflow:  hidden;
+	position:  relative;
+}
+
+.feedback{
+	margin-top:  43px;
+	overflow:  hidden;
+	position:  relative;
+	width: 3900px;
+	transform:  translateX(-1229px);
+	transition: translateX, .5s ease-in-out;
+}
+
+.feedback li{
+	width:  1172px;
+	overflow: hidden;
+	float:  left;
+	margin-right:  57px;
+}
+
+.human-info{
+	float:  left;
+	width:  169px;
+}
+
+.name, .position{
+	text-align: center;
+}
+
+.name{
+	font: 20px/1 'Poppins Bold', Arial, sans-serif;
+	color: #2b2b2b;
+	margin-top:  4px;
+}
+
+.position{
+	font-size:  12px;
+	color:  #0b3275;
+}
+
+.feedback-text{
+	float:  left;
+	width:  962px;
+	color: #2b2b2b;
+	margin: 22px 0 0 30px;
+}
+
+.square-arrow-left, .square-arrow-right{
+	position:  absolute;
+	top: 234px;
+	background: #c1dcf9;
+	height: 54px;
+	transition: scale, 0.15s linear;
+}
+
+.square-arrow-left{
+	left:  0px;
+}
+
+.square-arrow-right{
+	right:  0px;
+}
+
+.square-arrow-left:hover, .square-arrow-right:hover{
+	transform:  scale(1.09);
+}
+
+.square-arrow-left img:hover, .square-arrow-right img:hover{
+	cursor: pointer;
+}
+
+/**********************Форма Contact Us**********************/
+main section:nth-child(5){
+	position:  relative;
+}
+
+.contact-bg + div{
+	padding:  81px 0 124px;
+}
+
+.contact-bg{
+	position:  absolute;
+	top:  0px;
+	left:  0px;
+	z-index:  -1;
+}
+
+.contact-header{
+	text-align:  center;
+	color: #fcfdfc;
+}
+
+.contact-form{
+	margin-top:  160px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="number"], textarea{
+	width: 1164px;
+	font: 17px 'Poppins Regular', Arial, sans-serif;
+	color:  #fcfdfc;
+	padding: 22px 4px;
+	outline:  none;
+	border:  none;
+	border-bottom: 1px solid #fff;
+	background:  none;
+	margin-bottom:  17px;
+}
+
+textarea{
+	padding: 170px 4px 23px 4px;
+	height:  30px;
+	margin-bottom:  0;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{ 
+	-webkit-appearance:  none;
+}
+
+input[type="number"]{
+	-moz-appearance: textfield;
+}
+
+.contact-form ::placeholder{
+	font-style: italic;
+	color: #d9d9d9;
+	opacity:  1; 
+}
+
+.contact-form input[type="image"]{
+	margin: 128px auto 0;
+	width:  252px;
+	height:  84px;
+	display:  block;
+	transition:  scale, 0.2s linear;
+}
+
+.contact-form input[type="image"]:hover{
+	transform: scale(1.05);
+}
+
+/**********************Блок с контактами**********************/
+footer section:nth-child(1){
+	background: #c1dcf9;
+	padding:  100px 0 87px;
+	position:  relative;
+}
+
+.line1, .line2{
+	position:  absolute;
+	top:  141px;
+	z-index:  0;
+}
+
+.line1{
+	left:  605px;
+}
+
+.line2{
+	right: 605px;
+}
+
+.contacts{
+	width: 946px;
+	margin:  0 auto;
+	overflow:  hidden;
+}
+
+.contacts li{
+	width: 168px;
+	float:  left;
+	margin-right:  236px;
+}
+
+.contacts li:nth-child(2){
+	width:  136px;
+}	
+
+.contacts li:nth-child(3){
+	margin-right:  0;
+}
+
+.image-block{
+	display:  flex;
+	width:  79px;
+	height:  79px;
+	margin:  0 auto;
+	border-radius:  50%;
+	background:  #fff;
+	transition: background, .3s linear;
+	position:  relative;
+	z-index:  1;
+}
+
+.image-block:hover{
+	background: #179dfb;
+}
+
+.image-block img{
+	margin:  auto auto;
+	filter: invert(50%) sepia(200%) hue-rotate(180deg) saturate(900%);
+	transition: filter, .2s linear;
+}
+
+.image-block:hover img{
+	filter: invert(0%) sepia(0%) hue-rotate(0deg) saturate(0%);
+}
+
+.image-block + a{
+	color:  #fff;
+	text-align:  center;
+	margin-top:  24px;
+	display:  block;
+}
+
+/**********************Блок Copy**********************/
+footer section:nth-child(2){
+	background: #273135;
+}
+
+.copyright{
+	color: #fbfcfd;
+	text-align:  center;
+	padding:  20px 0;
+}
